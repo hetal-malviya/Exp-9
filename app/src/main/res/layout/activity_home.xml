@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_glass_gradient"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Dashboard"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- User Profile Glass Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_glass_card"
+            android:elevation="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvWelcomeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textColor="@color/pink_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: user@example.com"
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:textColor="#444444"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textColor="@color/pink_primary"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/pink_primary"
+                app:strokeWidth="1.5dp" />
+
+        </LinearLayout>
+
+        <!-- Registered Database Users Glass Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_glass_card"
+            android:elevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registered Users Database"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textColor="@color/pink_dark"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvUsersList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading registered users..."
+                android:padding="12dp"
+                android:fontFamily="serif"
+                android:background="@drawable/bg_glass_output"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

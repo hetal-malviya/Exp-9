@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Glass Pink Palette -->
+    <color name="pink_primary">#E91E63</color>
+    <color name="pink_secondary">#FF4081</color>
+    <color name="pink_dark">#C2185B</color>
+    <color name="pink_light">#F8BBD0</color>
+    <color name="pink_accent">#FF80AB</color>
+    <color name="pink_bg_gradient_start">#FF758C</color>
+    <color name="pink_bg_gradient_end">#FF7EB3</color>
+    <color name="pink_soft_bg">#FFF0F5</color>
+
+    <!-- Glassmorphism translucent layers -->
+    <color name="glass_card_bg">#E6FFFFFF</color>
+    <color name="glass_card_pink_bg">#EDFFF0F5</color>
+    <color name="glass_card_stroke">#80FF80AB</color>
+    <color name="glass_input_bg">#D9FFFFFF</color>
+    <color name="glass_output_bg">#C2F8BBD0</color>
+</resources>
